@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@keyframes rotation {
+
+  from{
+    transform: rotate(10deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+
+}
