@@ -1,8 +1,12 @@
-import TodoContainer from "./Components/TodoContainer"
+import { Suspense } from 'react';
+import TodoContainer from "./Components/TodoContainer";
+
 export default function Home() {
   return (
     <div className="font-sans flex items-center bg-black text-white justify-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-        <TodoContainer/>
+      <Suspense fallback={<div>Loading todos...</div>}>
+        <TodoContainer />
+      </Suspense>
     </div>
   );
 }
