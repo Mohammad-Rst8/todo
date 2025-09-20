@@ -23,7 +23,7 @@ export default function RootLayout({
 }: { children: React.ReactNode;}) {
   return (
     <html lang="en">
-       <Head>
+     
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
         
@@ -36,7 +36,7 @@ export default function RootLayout({
         {/* برای پشتیبانی از ویندوز */}
         <meta name="msapplication-TileImage" content="/icon-192x192.png" />
         <meta name="msapplication-TileColor" content="#000000" />
-      </Head>
+     
       <body>
         
         <TanstackProvider>
